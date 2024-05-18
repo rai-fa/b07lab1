@@ -33,7 +33,7 @@ public class Polynomial {
     			resultCoefficients[i] = thisCoefficient + otherCoefficient;
     		}
 		
-		return resultCoefficients
+		return new Polynomial(resultCoefficients);
 	}
 	
 	
