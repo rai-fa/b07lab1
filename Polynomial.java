@@ -3,9 +3,11 @@ public class Polynomial {
 
 	public Polynomial() {
 		coefficients = new double[]{0};
+	}
 	
 	public Polynomial(double[] a) {
 		coefficients = a;
+	}
 
 	// Method to add two polynomials
     	public Polynomial add(Polynomial other) {
