@@ -32,6 +32,7 @@ public class Polynomial {
     
     			resultCoefficients[i] = thisCoefficient + otherCoefficient;
     		}
+	}
 	
 	
     	// Method to evaluate the polynomial for a given value of x
