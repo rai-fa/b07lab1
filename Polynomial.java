@@ -32,6 +32,8 @@ public class Polynomial {
     
     			resultCoefficients[i] = thisCoefficient + otherCoefficient;
     		}
+		
+		return resultCoefficients
 	}
 	
 	
