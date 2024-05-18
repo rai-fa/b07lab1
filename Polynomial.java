@@ -2,10 +2,10 @@ public class Polynomial {
 	double[] coefficients;
 
 	public Polynomial() {
-		coefficients = {0};
+		coefficients = new double[]{0};
 	
 	public Polynomial(double[] a) {
-		coefficients = a
+		coefficients = a;
 
 	// Method to add two polynomials
     	public Polynomial add(Polynomial other) {
