@@ -12,16 +12,26 @@ public class Polynomial {
 	// Method to add two polynomials
     	public Polynomial add(Polynomial other) {
         	int maxLength = Math.max(this.coefficients.length, other.coefficients.length);
-        	double[] resultCoefficients = new double[maxLength];
+        	double[] resultCoefficients = new double[maxLength];  
+		// # of coefficients in the resulting polynomial is determined by finding the longer polynomial
         
         	for (int i = 0; i < maxLength; i++) {
-            		double thisCoefficient = (i < this.coefficients.length) ? this.coefficients[i] : 0;
-            		double otherCoefficient = (i < other.coefficients.length) ? other.coefficients[i] : 0;
-            		resultCoefficients[i] = thisCoefficient + otherCoefficient;
-        	}
-        
-        	return new Polynomial(resultCoefficients);
-    	}
+    			double thisCoefficient;
+    			if (i < this.coefficients.length) {
+        			thisCoefficient = this.coefficients[i];
+    			} else {
+        			thisCoefficient = 0;  // if i is beyond the length, interpret the coefficient as 0
+    			}
+    
+    			double otherCoefficient;
+    			if (i < other.coefficients.length) {
+        			otherCoefficient = other.coefficients[i];
+    			} else {
+        			otherCoefficient = 0;
+    			}
+    
+    			resultCoefficients[i] = thisCoefficient + otherCoefficient;
+    		}
 	
 	
     	// Method to evaluate the polynomial for a given value of x
