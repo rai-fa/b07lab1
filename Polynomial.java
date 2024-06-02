@@ -155,7 +155,7 @@ public class Polynomial {
     	}
 
     	// Helper method to find the maximum exponent
-    		private int maxExponent(int[] exponents) {
+    	private int maxExponent(int[] exponents) {
         	int max = exponents[0];
         	for (int i = 1; i < exponents.length; i++) {
             		if (exponents[i] > max) {
@@ -166,7 +166,7 @@ public class Polynomial {
     	}
 
     	// Helper method to create a Polynomial from coefficient array
-    		private Polynomial createPolynomialFromArrays(double[] resultCoefficients) {
+    	private Polynomial createPolynomialFromArrays(double[] resultCoefficients) {
         	int count = 0;
         	for (double coeff : resultCoefficients) {
             		if (coeff != 0) {
