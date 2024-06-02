@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Polynomial {
 	double[] coefficients;
+	private int[] exponents;
 
 	public Polynomial() {
 		coefficients = new double[]{0};
