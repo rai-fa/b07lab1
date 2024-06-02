@@ -32,8 +32,8 @@ public class Polynomial {
 
 	// Method to add two polynomials
     	public Polynomial add(Polynomial other) {
-        	int maxLength = Math.max(this.coefficients.length, other.coefficients.length);
-        	double[] resultCoefficients = new double[maxLength];  
+        	int maxExp = Math.max(maxExponent(this.exponents), maxExponent(other.exponents));
+        	double[] resultCoefficients = new double[maxExp + 1];  
 		// # of coefficients in the resulting polynomial is determined by finding the longer polynomial
         
         	for (int i = 0; i < this.coefficients.length; i++) {
